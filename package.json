@@ -1,0 +1,33 @@
+{
+  "name": "seedbot",
+  "version": "2.1.88",
+  "bin": {
+    "seedbot": "cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "author": "SeedBot Team <support@seedbot.dev>",
+  "license": "SEE LICENSE IN README.md",
+  "description": "Use SeedBot right from your terminal. SeedBot can understand your codebase, edit files, run terminal commands, and handle entire workflows for you.",
+  "homepage": "https://github.com/seedbot-dev/seedbot",
+  "bugs": {
+    "url": "https://github.com/seedbot-dev/seedbot/issues"
+  },
+  "scripts": {
+    "prepare": "node -e \"if (!process.env.AUTHORIZED) { console.error('ERROR: Direct publishing is not allowed.\\nPlease see the release workflow documentation to publish this package.'); process.exit(1); }\""
+  },
+  "dependencies": {},
+  "optionalDependencies": {
+    "@img/sharp-darwin-arm64": "^0.34.2",
+    "@img/sharp-darwin-x64": "^0.34.2",
+    "@img/sharp-linux-arm": "^0.34.2",
+    "@img/sharp-linux-arm64": "^0.34.2",
+    "@img/sharp-linux-x64": "^0.34.2",
+    "@img/sharp-linuxmusl-arm64": "^0.34.2",
+    "@img/sharp-linuxmusl-x64": "^0.34.2",
+    "@img/sharp-win32-arm64": "^0.34.2",
+    "@img/sharp-win32-x64": "^0.34.2"
+  }
+}
