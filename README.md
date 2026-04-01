@@ -1,43 +1,67 @@
-# SeedBot
+# Forkit SeedBot CLI
 
-![](https://img.shields.io/badge/Node.js-18%2B-brightgreen?style=flat-square) [![npm]](https://www.npmjs.com/package/seedbot)
+Think in Trees. Not Lines.
 
-[npm]: https://img.shields.io/npm/v/seedbot.svg?style=flat-square
+Human thought is branching, recursive, and evolving. Forkit is built around that reality.  
+This repository contains the `seedbot` CLI: the terminal companion to Forkit for coding, exploration, and branch-first collaboration.
 
-SeedBot is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows -- all through natural language commands. Use it in your terminal, IDE, or tag @seedbot on Github.
+## Why Forkit
 
-**Learn more at [SeedBot Homepage](https://seedbot.com/product/seedbot)** | [Documentation](https://code.seedbot.com/docs/en/overview)
+Traditional chats are linear and easy to lose. Forkit preserves context as a tree:
 
-<img src="https://github.com/anthropics/seedbot/blob/main/demo.gif?raw=1" />
+- **Context Preservation**: revisit an idea from days ago and continue it without breaking your current flow
+- **Forking as Thinking**: fork to evolve ideas, not just copy them
+- **Garden & Groves**: develop privately in your Garden, then publish useful branches to public Groves
 
-## Get started
+This CLI brings that same spirit into your local development workflow.
 
-1. Install SeedBot:
+## What SeedBot CLI Does
 
-```sh
-npm install -g seedbot
+- Understands your codebase and working directory
+- Edits files and executes shell commands
+- Helps with iterative problem-solving and multi-step coding tasks
+- Supports branch-style exploration while keeping context organized
+
+## Quick Start
+
+```bash
+# from this repo root
+./run-seedbot.sh
 ```
 
-2. Navigate to your project directory and run `seedbot`.
+Common checks:
 
-## Reporting Bugs
+```bash
+./run-seedbot.sh --version
+./run-seedbot.sh --help
+./run-seedbot.sh auth status
+```
 
-We welcome your feedback. Use the `/bug` command to report issues directly within SeedBot, or file a [GitHub issue](https://github.com/anthropics/seedbot/issues).
+## Optional Global Install
 
-## Connect on Discord
+```bash
+npm link
+seedbot --help
+```
 
-Join the [SeedBot Developers Discord](https://github.com/seedbot-dev/seedbot/discussions) to connect with other developers using SeedBot. Get help, share feedback, and discuss your projects with the community.
+## Project Structure
 
-## Data collection, usage, and retention
+- `cli.js` - runnable CLI bundle
+- `run-seedbot.sh` - recommended launcher
+- `seedbot/` - source tree
+- `vendor/` - runtime native dependencies
 
-When you use SeedBot, we collect feedback, which includes usage data (such as code acceptance or rejections), associated conversation data, and user feedback submitted via the `/bug` command.
+## Feedback
 
-### How we use your data
+Forkit is built for collaborators and explorers.  
+If you hit issues or have product ideas, open an issue in this repo or join our WeChat group.
 
-See our [data usage policies](https://code.seedbot.com/docs/en/data-usage).
+### WeChat Group
 
-### Privacy safeguards
+Scan the QR code below to join the Forkit WeChat group:
 
-We have implemented several safeguards to protect your data, including limited retention periods for sensitive information and restricted access to user session data.
+![Forkit WeChat Group QR](./assets/wechat-group-qr.png)
 
-For full details, please review our [Commercial Terms of Service](https://www.anthropic.com/legal/commercial-terms) and [Privacy Policy](https://www.anthropic.com/legal/privacy).
+## Learn More
+
+- Forkit About: https://forkit.chat/about
